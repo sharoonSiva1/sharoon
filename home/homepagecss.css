@@ -1,0 +1,86 @@
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+
+.column {
+  float: left;
+  padding: 10px 50px 10px 60px;
+  text-align: center;
+  
+}
+
+/* Clear floats after image containers */
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.text {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #b4ace3;  
+}
+
+.background{
+  background-color: #3b3b54;
+  padding: 20px;
+}
+
+
+.curveimages {
+	border-radius: 50%; /* Reduced roundness */
+	box-shadow: 0px 0px 50px #000000;
+	width: 550px; /* Smaller image size */
+	height: auto; /* Maintain aspect ratio */
+  }
+
+  
+  /* Media Query for screens smaller than 768px (tablets) */
+@media (max-width: 768px) {
+  /* Make columns stack vertically on smaller screens */
+  .column {
+      float: none; /* Stack columns vertically */
+      width: 100%; /* Take full width */
+      padding-left: 20px; /* Reduce padding for smaller screens */
+      padding-right: 20px;
+  }
+
+  .curveimages {
+      width: 350px; /* Reduce image size */
+      box-shadow: 0px 0px 50px #000000; /* Adjust box shadow */
+  }
+
+  .text {
+      font-size: 18px; /* Slightly smaller font */
+  }
+
+  .background {
+      padding: 20px; /* Add some padding for smaller screens */
+  }
+}
+
+/* Media Query for screens smaller than 480px (mobile phones) */
+@media (max-width: 480px) {
+  /* Columns will still stack vertically, but with even smaller padding */
+  .column {
+      float: none;
+      width: 100%;
+      padding-left: 10px; /* Reduce padding further */
+      padding-right: 10px;
+  }
+
+  .curveimages {
+      width: 250px; /* Smaller image size for mobile */
+      box-shadow: 0px 0px 30px #000000; /* Further reduce box shadow */
+  }
+
+  .text {
+      font-size: 16px; /* Smaller font for mobile */
+  }
+
+  .background {
+      padding: 10px; /* Reduce padding for a more compact layout */
+  }
+}
+
+
