@@ -1,0 +1,128 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body main {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+
+
+.topnav-right .active {
+    background-color: #333;
+    color: white;
+}
+
+/* Main Section Styles */
+main {
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+#about h1, #branches h2, #summary h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+#about p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Branch Articles */
+.branch {
+    margin-bottom: 40px;
+}
+
+.branch h3 {
+    margin-bottom: 10px;
+    color: red;
+}
+.branches h4{
+    color: aqua;
+}
+
+.branch img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.branch p {
+    margin-bottom: 10px;
+}
+
+iframe {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+thead th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+}
+
+tbody td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+tfoot td {
+    padding: 10px;
+    background-color: #f4f4f4;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .topnav {
+        flex-direction: column;
+    }
+
+    .topnav-right a {
+        display: block;
+        text-align: center;
+    }
+
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+}

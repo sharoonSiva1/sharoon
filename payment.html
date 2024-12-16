@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css"/>
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="pharmacy.css" />
+    <link rel="stylesheet" href="enhancement.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header>
+        <div class="topnav">
+            <img class="logo" src="images/logo.jpg" alt="Golden Valley Hospital">
+            <div class="logo">
+                <p>Golden Valley Hospital</p>
+            </div>
+            <div class="topnav-right">
+                <a href="index.html">Home</a>
+                <a class="active" href="pharmacy.html">Pharmacy</a>
+                <a href="services.html">Services</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="form.html">Appointments</a>
+                <a href="login.html">Login</a>
+                <a href="about.html">About Us</a>
+            </div> 
+        </div>
+        <div class="bg"></div>
+    </header>
+
+    <div class="maindiv">
+        <div class="box1">
+            <div class="inbox1">
+                <!-- Order Summary Section -->
+                <div class="inbox2">
+                    <div class="inbox3">
+                        <label class="text1">Order Summary</label>
+                    </div>
+                </div>
+                <table class="order-summary" id="order-summary">
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody id="order-items"></tbody>
+                </table>
+
+                <!-- Payment Method Selection -->
+                <div class="inbox5">
+                    <label for="payment-method">Select Payment Method</label>
+                    <select id="payment-method" class="select1">
+                        <option value="card">Card Payment</option>
+                        <option value="cash">Cash on Delivery</option>
+                    </select>
+                </div>
+
+                <!-- Card Payment Fields -->
+                <div id="card-payment-fields" class="payment-method-fields">
+                    <div class="inbox10">
+                        <div class="inbox11">
+                            <label class="text2">Card Number</label>
+                            <input type="text" class="input1" placeholder="23412345667" />
+                
+                            <label class="text2">Expiry Date</label>
+                            <input type="month" class="input2" />
+                
+                            <label class="text2">Cardholder's Name</label>
+                            <input type="text" class="input-cardholder" placeholder="John Doe" />
+                
+                            <label class="text2">Security Code (CVC)</label>
+                            <input type="text" class="input3" placeholder="123" />
+                            <p>Last 3 digits on the back of your card</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cash on Delivery Fields -->
+                <div id="cash-delivery-fields" class="payment-method-fields">
+                    <div class="inbox10">
+                        <div class="inbox11">
+                            <label class="text2">Address</label>
+                            <input type="text" class="input1" placeholder="123 Main St" />
+                
+                            <label class="text2">Phone Number</label>
+                            <input type="text" class="input2" placeholder="1234567890" />
+                
+                            <label class="text2">Email Address</label>
+                            <input type="text" class="input3" placeholder="example@email.com" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="paymentBtn">
+                    <a href="pharmacy.html" class="cancelBtn1">Cancel</a>
+                    <button id="make-payment" class="btn2">Make Payment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="payment.js"></script>
+</body>
+</html>

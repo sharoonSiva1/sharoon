@@ -1,0 +1,278 @@
+
+/* .bg {
+    top: 94px;
+    left: 0px;
+    width: 100%;
+    height: 2400px;
+    background: white;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    user-select: none;
+    color: rgba(0, 0, 0, 0.1);
+} */
+
+.pic1 {
+    position: absolute;
+    left: 10%;
+    top: 30%;
+}
+
+.pic2 {
+    position: absolute;
+    left: 60%;
+    top: 30%;
+}
+
+.pic3 {
+    position: absolute;
+    left: 10%;
+    top: 130%;
+}
+
+.pic4 {
+    position: absolute;
+    left: 60%;
+    top: 130%;
+}
+
+.pic5 {
+    position: absolute;
+    left: 10%;
+    top: 230%;
+}
+
+.pic6 {
+    position: absolute;
+    left: 60%;
+    top: 230%;
+}
+
+/* .wrapper {
+    position: absolute;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0%;
+    background-color: #ffff12;
+} */
+
+.box {
+    height: 550px;
+    width: 400px;
+    position: absolute;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: scale(1.2);
+    box-shadow: 0 25px 40px rgba(162, 28, 28, 0.5);
+    z-index: 5;
+    background-color: #efefeb;
+}
+
+.imgbox {
+    position: absolute;    
+    top: 0%;
+    left: 0%;
+    height: 50%;
+    width: 100%;
+}
+
+.imgbox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.imgbox:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(to bottom, #e01c39, #000);
+    mix-blend-mode: multiply;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.wrapper .box:hover .imgbox:before {
+    opacity: 1;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    align-items: flex-end;
+    z-index: 1;
+}
+
+.content h1 {
+    padding-bottom: 20px;
+    color: rgb(87, 21, 21);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 30px;
+    transform: translateY(200px);
+    transition: 0.3s;
+}
+
+.box:hover .content h1 {
+    transform: translateY(0px);
+    transition-delay: 0.2s;
+}
+
+.content p {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    transform: translateY(200px);
+    transition: 0.3s;
+    text-align: justify;
+}
+
+.box:hover .content p {
+    transform: translateY(0px);
+    transition-delay: 0.2s;
+}
+
+footer {
+    top: 2300px;
+}
+
+.link {
+    position: absolute;
+    right: 10%;
+    top: 2300px;
+    background-color: rgb(153, 119, 120);
+    background-size: 30px;
+}
+
+.linkx {
+    position: absolute;
+    right: 10%;
+    top: 120px;
+    background-color: rgb(142, 119, 153);
+    background-size: 30px;
+}
+
+.btn1 {
+    position: absolute;
+    left: 10%;
+    top: 2300px;
+    background-color: black;
+    color: red;
+    height: 30px;
+    width: 180px;
+    font-size: 20px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 yellow;
+    transition: ease-out 0.1s;
+    outline: none;
+}
+
+.btn1:hover {
+    box-shadow: inset 300px 0 0 0 yellow;
+}
+
+/* Media Query for screens smaller than 768px (tablets) */
+@media (max-width: 768px) {
+    .bg {
+        width: 100%;
+        height: auto;
+    }
+
+    .pic1, .pic2, .pic3, .pic4, .pic5, .pic6 {
+        position: relative;
+        left: 0;
+        top: 0;
+        margin: 20px auto;
+        width: 80%;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding: 10px;
+        display: block;
+    }
+
+    .box {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    footer {
+        position: relative;
+        top: 0;
+        margin-top: 30px;
+    }
+
+    .btn1 {
+        width: 90%;
+        left: 0;
+        margin: 10px auto;
+        font-size: 18px;
+    }
+
+    .link, .linkx {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 10px auto;
+        width: 90%;
+    }
+}
+/* Media Query for screens smaller than 480px (mobile phones) */
+@media (max-width: 480px) {
+    .bg {
+        height: auto;
+        padding: 10px 0; /* Add padding for aesthetics */
+    }
+
+    .pic1, .pic2, .pic3, .pic4, .pic5, .pic6 {
+        width: 90%; /* Wider on mobile */
+        margin: 10px auto; /* Center with auto margins */
+    }
+
+    .wrapper {
+        width: 100%;
+        padding: 5px;
+        display: block;
+    }
+
+    .box {
+        width: 100%; /* Full width on mobile */
+        height: auto; /* Responsive height */
+        margin: 10px 0; /* Vertical spacing */
+    }
+
+    footer {
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .btn1 {
+        width: 100%; /* Full width on mobile */
+        margin: 5px auto; /* Center with auto margins */
+        font-size: 16px;
+    }
+
+    .link, .linkx {
+        position: relative;
+        margin: 5px auto;
+        width: 100%;
+    }
+}

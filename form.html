@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Information Form</title>
+  <link rel="stylesheet" href="enhancement.css">
+  <link rel="stylesheet" href="form.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body class="backgroundshop">
+  <header>	
+    <div class="topnav">
+      <img class="logo" src ="images/logo.jpg" alt = "Golden Valley Hospital">
+      <div class="logo">
+      <p>Golden Valley Hospital</p>
+      </div>
+      <div class="topnav-right">
+        <a href="index.html">Home</a>
+        <a href="pharmacy.html">Pharmacy</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html">Doctors</a>
+        <a class="active" href="form.html">Appointment</a>
+        <a href="login.html">Login</a>
+        <a href="about.html">About Us</a>
+        
+      </div>	
+    </div>
+    <div class="bg"></div>
+      
+  
+  </header>
+    
+
+
+  <main>
+    <center>
+      <h2>Patient Information Form</h2>
+      <form action="/submit_form" method="post">
+           <!-- Full Name -->
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required>
+
+          <!-- Mobile Number -->
+          <label for="mobile">Mobile Number:</label>
+          <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+
+          <!-- Email Address -->
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+
+          <!-- Date -->
+          <label for="date">Appointment Date:</label>
+          <input type="date" id="date" name="date" required>
+
+          <!-- Time -->
+          <label for="time">Appointment Time:</label>
+          <input type="time" id="time" name="time" required>
+
+          <!-- Gender -->
+          <fieldset>
+            <legend>Gender:</legend>
+            <input type="radio" id="male" name="gender" value="male" required> Male
+            <input type="radio" id="female" name="gender" value="female" required> Female
+            <input type="radio" id="other" name="gender" value="other" required> Other
+          </fieldset>
+
+          <!-- Visited Before -->
+          <fieldset>
+            <legend>Have you visited the hospital before?</legend>
+            <input type="radio" id="yes" name="visited" value="yes" required> Yes
+            <input type="radio" id="no" name="visited" value="no" required> No
+          </fieldset>
+
+          <!-- Submit and Reset Buttons -->
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+      </form>
+    </center>
+  </main>
+  <div class="Footer">
+		<footer class="Footer">
+			<p>&copy; 2024 Golden Valley Hospital. All rights reserved.</p>
+      <p>Phone: 0112507859</p>
+      <p>Email: GoldenValley@gmail.com</p>
+		</footer>
+</body>
+</html>

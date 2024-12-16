@@ -1,0 +1,237 @@
+:root {
+    --primary-color: #56CCF2;
+    --secondary-color: #EB5757;
+    --background-color: #738c9c;
+    --header-bg-color: rgba(0, 0, 0, 0.6);
+    --header-text-color: white;
+    --text-color: #333;
+    --border-color: black;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+}
+
+/* General Navigation Styles */
+.topnav a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--primary-color);
+    border-radius: 0.3em;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.topnav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Section for Content */
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+/* Header Styles */
+.section-header {
+    font-size: 2em;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* General Button Styling */
+.btn {
+    padding: 0.67em 1.2em;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 0.3em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #28a745; /* Same green color for consistency */
+}
+
+.btn-primary:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Shop Item Display */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 0.5em;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    background-color: #f5f5f5;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.product-card h3 {
+    font-size: 1.2em;
+    color: var(--text-color);
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 1em;
+    color: var(--text-color);
+}
+
+.product-card .price {
+    font-size: 1.5em;
+    color: black; /* Change this to black */
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product-card label {
+    font-size: 1em;
+    color: var(--text-color);
+}
+
+.product-card input {
+    width: 50%; /* Reduced width of quantity box */
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid var(--border-color);
+    border-radius: 0.3em;
+}
+
+
+/* Cart Section */
+.cart-total {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+.cart-total-title {
+    font-weight: bold;
+}
+
+.cart-summary table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+.cart-summary th, .cart-summary td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-summary th {
+    background-color: #f7f7f7;
+}
+
+.cart-summary td input {
+    width: 50px;
+    text-align: center;
+}
+
+.cart-summary .btn-danger {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-summary .btn-danger:hover {
+    background-color: #c0392b;
+}
+
+/* Payment Button */
+#ifclicked {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#ifclicked:hover {
+    background-color: #218838;
+}
+
+#ifclicked:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+/* Footer */
+.Footer2 {
+    background-color: #2d2d2d;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.Footer2 p {
+    margin: 5px 0;
+}
+
+.Footer2 p:first-child {
+    font-weight: bold;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    }
+
+    .product-card {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .product-card img {
+        height: 200px; /* Reduce image height for small screens */
+    }
+}

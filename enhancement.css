@@ -1,0 +1,127 @@
+/* General cleanup for navigation bar */
+#logo {
+	width: 130px;
+	padding-left: 10px;
+	padding-top: 12px;
+}
+
+.topnav .logo {
+	float: left;
+	height: 100px;
+	width: 100px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+nav {
+	height: 95px;
+	background: black;
+}
+
+.nav-icon {
+	position: relative;
+	width: 20px;
+	top: 2px;
+}
+
+.topnav {
+	background-color: #8dc3c4c8;
+	height: 100px;
+	z-index: 1;
+}
+
+.topnav a {
+	float: left;
+	color: #000;
+	text-align: center;
+	padding: 18px;
+	text-decoration: none;
+	font-size: 20px;
+	box-shadow: inset 0 0 0 0 #346465;
+}
+
+.topnav a:hover {
+	box-shadow: inset 400px 0 0 0 #346465;
+}
+
+.topnav a.active {
+	background-color: #cde5e5;
+}
+
+.topnav-right {
+	float: right;
+	overflow: hidden;
+}
+
+ul {
+	list-style: none;
+}
+
+ul li {
+	float: left;
+	width: 100px;
+	text-align: center;
+}
+
+ul li a {
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+
+ul li a:hover {
+	color: #555;
+}
+
+nav ul li ul li {
+	display: none;
+}
+
+nav ul li:hover ul li {
+	display: block;
+	background: black;
+}
+
+#nav-links {
+	left: 50%;
+	transform: translateX(-50%);
+	position: relative;
+	top: 30px;
+}
+
+.slide-container {
+	width: 93%;
+	height: 799px;
+	background: url(images/Banner-01.png);
+	margin: 15px auto;
+	animation: slide 15s infinite;
+}
+
+
+
+footer {
+	background-color: black;
+	color: white;
+	text-align: center;
+	height: 100px;
+}
+
+h5, h6 {
+	position: relative;
+	top: 55px;
+	color: white;
+}
+
+h5 a, h6 a {
+	color: white;
+	text-decoration: none;
+}
+
+h6 {
+	font-size: 12px;
+}
+
+h6 a:hover {
+	color: #555;
+}

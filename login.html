@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Login Page</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="enhancement.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <header>	
+        <div class="topnav">
+            <img class="logo" src ="images/logo.jpg" alt = "Golden Valley Hospital">
+            <div class="logo">
+            <p>Golden Valley Hospital</p>
+            </div>
+            <div class="topnav-right">
+                <a href="index.html">Home</a>
+                <a href="pharmacy.html">Pharmacy</a>
+                <a href="services.html">Services</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="form.html">Appointments</a>
+                <a class="active" href="login.html">Login</a>
+                <a href="about.html">About Us</a>
+                
+            </div>	
+        </div>
+        <div class="bg"></div>
+        
+    
+    </header>
+    <main>
+        <div class="login-container">
+        <div class="logo">
+            <p>Golden Valley Hospital</p>
+            </div>
+        <form action="login.php" method="POST">
+            <div class="input-field">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-field">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+        <div class="extra-links">
+            <a href="forgot-password.php">Forgot Password?</a>
+            <a href="create-account.php">Create an Account</a>
+        </div>
+    </div>
+    </main>
+    <div class="Footer">
+		<footer class="Footer">
+			<p>&copy; 2024 Golden Valley Hospital. All rights reserved.</p>
+            <p>Phone: 0112507859</p>
+            <p>Email: GoldenValley@gmail.com</p>
+		</footer>   
+</body>
+</html>
